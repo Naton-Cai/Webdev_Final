@@ -1,31 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naton Cai</title>
+    <title>Naton Cai's Website</title>
+    <script defer src="js/dark_mode_toggle.js"></script>
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-dark">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <body class="bg-body">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Project</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Previous</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <a class="navbar-brand fs-3">Naton Cai</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="Home" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Previous Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
           </ul>
+
+          <div class="d-flex gap-3 me-3 fs-3">
+            <a
+              class="icon-link icon-link-hover text-white"
+              style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0)"
+              href="https://github.com/Naton-Cai"
+              aria-label="Github Link"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              class="icon-link icon-link-hover text-white"
+              style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0)"
+              href="https://www.linkedin.com/in/naton-cai-b88b94270"
+              aria-label="Linkedin Link"
+            >
+              <i class="bi bi-linkedin" alt="Link to Linkedin"></i>
+            </a>
+            <a
+              class="icon-link icon-link-hover text-white"
+              style="--bs-icon-link-transform: translate3d(0, -0.25rem, 0)"
+              href="https://mail.google.com/mail/u/0/?fs=1&to=natoncai@gmail.com&tf=cm"
+              aria-label="Gmail Draft Link"
+            >
+              <i class="bi bi-envelope-at-fill" alt="Link to Gmail"></i>
+            </a>
+            <div class="vr gap-3"></div>
+            <div class="form-check form-switch d-flex gap-2 text-white fs-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="theme-toggle"
+                aria-label="Toggle Dark Mode"
+              />
+              <i class="bi bi-brightness-high" id="dark_mode_icon"></i>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
+
     <main>
-      <div class="container-fluid bg-dark text-dark">hhih</div>
+      <div class="container">
+        <h1 class="text-body text-center mt-5">Naton Cai</h1>
+        <div class="container-fluid text-body">
+          <p class="text-body text-center">
+            This is a brief introduction about Naton Cai
+          </p>
+
+          <img
+            src="https://placehold.co/1200x600"
+            alt="Profile Picture"
+            class="img-fluid rounded-circle mx-auto d-block mt-4"
+            style="width: 200px; height: 200px; object-fit: cover"
+          />
+        </div>
+      </div>
     </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
