@@ -10,12 +10,12 @@ Basic palete
 /* || General styles */
     .form-switch .form-check-input {
       background-color: #ffffff; /* Unchecked background color */
-      border-color: #ccc; /* Unchecked border color */
+      border-color: #ccc;
     }
     
     .form-switch .form-check-input:checked {
-      background-color: #830057; /* Checked background color (dark red) */
-      border-color: #ffffff; /* Checked border color (dark red) */
+      background-color: #830057; /* Checked background color */
+      border-color: #ffffff; 
     }
 
 /* || Typography */
@@ -28,9 +28,16 @@ Basic palete
     }
 
     .navbar-dark .nav-link {
-        color: #ffffff; /* Red color */
-        transition: transform 0.3s ease-in-out;
+        color: #ffffff;
     }
-        .navbar-dark .nav-link:hover {
-        transform: translate3d(0, -0.25rem, 0)
+
+    .navbar-dark .nav-link:hover {
+        transform: translate3d(0, -0.25rem, 0);
+        transition: transform 0.1s ease-in-out;
+    }
+
+    .icon-link:hover {
+        transform: translate3d(0, -0.25rem, 0);
+        transition: transform 0.1s ease-in-out;
+        color: #ffffff;
     }
