@@ -25,8 +25,12 @@ Basic palete
     .project-icon{
         width: 40px;}
 
+
+    @media (max-width: 768px) {
     .infoCollapse{
-        width: 19%;
+        width: 20%;
+    }
+
     }
 
 
