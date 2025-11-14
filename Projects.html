@@ -87,64 +87,136 @@
     <main>
       <div class="container">
         <h1 class="my-4">Projects</h1>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <img
+              src="assets/images/trimet_logo.png"
+              alt="Trimet Logo"
+              class="project-icon me-3"
+            />
+            <h2 class="mb-0">Trimet Data Pipeline</h2>
+          </div>
+
+          <a
+            class="btn btn-primary infoCollapse"
+            data-bs-toggle="collapse"
+            href="#collapseTrimet"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseTrimet"
+          >
+            <span class="collapse-bt-text">Show More</span>
+            <i class="bi bi-chevron-down align-bottom"></i>
+          </a>
+        </div>
+        <div class="collapse mt-3" id="collapseTrimet">
+          <p class="fs-5">
+            Developed a robust data pipeline for Trimet's bus traffic data, the
+            public transit agency in Portland, Oregon, utilizing Python and
+            Google Cloud to automate data ingestion, transformation, and loading
+            positonal data into a SQL database. Data was then used for a
+            visualization tool utilizing Google Maps to view past Trimet Bus
+            traffic activity, including density and frequency.
+          </p>
+          <div class="d-flex justify-content-end">
+            <a
+              class="text-body icon-link"
+              title="Trimet Pipeline Github Repository"
+              href="https://github.com/Naton-Cai/Data-Pipeline-Project"
+              aria-label="Trimet Pipeline Github Repository Link"
+            >
+              <span class="fs-5">
+                <i class="bi bi-box-arrow-up-right"></i> Find out more
+              </span>
+            </a>
+          </div>
+          <figure>
+            <img
+              src="assets/images/trimet_1.png"
+              alt="visualization of trimet data 1"
+              class="img-fluid mt-3"
+            />
+            <img
+              src="assets/images/trimet_2.png"
+              alt="visualization of trimet data 2"
+              class="img-fluid mt-3"
+            />
+            <figcaption>
+              <i>Example Page of visualizations of queries to the database.</i>
+            </figcaption>
+          </figure>
+        </div>
+
+        <hr />
+
         <div>
           <div class="d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
               <img
-                src="assets/images/trimet_logo.png"
-                alt="Trimet Logo"
-                class="project-icon rounded-circle me-3"
+                src="assets/images/dnd_logo.png"
+                alt="D&D Logo"
+                class="project-icon me-3"
               />
-              <h2 class="mb-0">Trimet Data Pipeline</h2>
+              <h2 class="mb-0">D&D Shop Manager</h2>
             </div>
-
             <a
               class="btn btn-primary infoCollapse"
               data-bs-toggle="collapse"
-              href="#collapseTrimet"
+              href="#collapseDnd"
               role="button"
               aria-expanded="false"
-              aria-controls="collapseTrimet"
+              aria-controls="collapseDnd"
             >
               <span class="collapse-bt-text">Show More</span>
               <i class="bi bi-chevron-down align-bottom"></i>
             </a>
           </div>
-          <div class="collapse mt-3" id="collapseTrimet">
+          <div class="collapse mt-3" id="collapseDnd">
             <p class="fs-5">
-              Developed a robust data pipeline for Trimet's bus traffic data,
-              the public transit agency in Portland, Oregon, utilizing Python
-              and Google Cloud to automate data ingestion, transformation, and
-              loading positonal data into a SQL database. Data was then used for
-              a visualization tool utilizing Google Maps to view past Trimet Bus
-              traffic activity, including density and frequency.
+              A web-based shop manager intended for use for Dungeons & Dragons.
+              It has the ability to add and drop items, manage shop currency and
+              with both Google's
+              <a
+                href="gemini.google.com"
+                title="Gemini Link"
+                aria-label="Gemini Link"
+                >Gemini API
+              </a>
+              and the
+              <a
+                href="https://open5e.com"
+                title="Open5e Link"
+                aria-label="Open5e Link"
+                >Open5e API
+              </a>
+              the website was able to both generate new shops, including names
+              and descriptions, using AI and populate those stores with items
+              from offical D&D sources.
+              <br /><br />
+              The website was then developed using Google Cloud, using Google
+              Datastore to store and retrive data for each shop. This site was
+              then deployed using Google Cloud Run and Docker containers.
             </p>
-            <a
-              class="text-body icon-link d-flex justify-content-end"
-              title="Trimet Pipeline Github Repository"
-              href="https://github.com/Naton-Cai/Data-Pipeline-Project"
-              aria-label="Trimet Pipeline Github Repository Link"
-            >
-              <p class="fs-5">
-                <i class="bi bi-box-arrow-up-right"></i>
-                Find out more
-              </p>
-            </a>
+            <div class="d-flex justify-content-end">
+              <a
+                class="text-body icon-link"
+                title="Shop Manager Github Repository"
+                href="https://github.com/Naton-Cai/shop-manager"
+                aria-label="Shop Manager Github Repository Link"
+              >
+                <span class="fs-5">
+                  <i class="bi bi-box-arrow-up-right"></i> Find out more
+                </span>
+              </a>
+            </div>
             <figure>
               <img
-                src="assets/images/trimet_1.png"
-                alt="visualization of trimet data 1"
-                class="img-fluid mt-3"
-              />
-              <img
-                src="assets/images/trimet_2.png"
-                alt="visualization of trimet data 2"
+                src="assets/images/shop_manager.png"
+                alt="Shop Manager"
                 class="img-fluid mt-3"
               />
               <figcaption>
-                <i
-                  >Example Page of visualizations of queries to the database.</i
-                >
+                <i>Example Shop Page.</i>
               </figcaption>
             </figure>
           </div>
@@ -158,7 +230,7 @@
               <img
                 src="assets/images/cracked_logo.png"
                 alt="Cracked Logo"
-                class="project-icon rounded-circle me-3"
+                class="project-icon me-3"
               />
 
               <h2 class="mb-0">Cracked Game</h2>
@@ -181,19 +253,20 @@
               Cracked was developed as game prototype. Made in godot, the game
               involves two apposing players that take the role of vases that
               must grab and throw each other against the walls in order to break
-              eachother and collect the gems within.
+              each other and collect the gems within.
             </p>
-            <a
-              class="text-body icon-link d-flex justify-content-end"
-              title="Cracked Github Repository"
-              href="https://github.com/Naton-Cai/Cracked"
-              aria-label="Cracked Github Repository Link"
-            >
-              <p class="fs-5">
-                <i class="bi bi-box-arrow-up-right"></i>
-                Find out more
-              </p>
-            </a>
+            <div class="d-flex justify-content-end">
+              <a
+                class="text-body icon-link"
+                title="Cracked Github Repository"
+                href="https://github.com/Naton-Cai/Cracked"
+                aria-label="Cracked Github Repository Link"
+              >
+                <span class="fs-5">
+                  <i class="bi bi-box-arrow-up-right"></i> Find out more
+                </span>
+              </a>
+            </div>
             <figure>
               <img
                 src="assets/images/cracked_1.png"
@@ -212,13 +285,11 @@
             <div class="d-flex align-items-center">
               <img
                 src="assets/images/combat_manager_logo.png"
-                alt="Combat Maanger Logo"
-                class="project-icon rounded-circle me-3"
+                alt="Combat Mananger Logo"
+                class="project-icon me-3"
               />
-
               <h2 class="mb-0">Nethys Web Scrapper</h2>
             </div>
-
             <a
               class="btn btn-primary infoCollapse"
               data-bs-toggle="collapse"
@@ -237,7 +308,7 @@
               scrapper to scrape creature data from the website
               <a
                 href="https://2e.aonprd.com"
-                title="Archive of Nethys 2E Repository"
+                title="Archive of Nethys 2E"
                 aria-label="Archive of Nethys 2E Link"
                 >Archives of Nethys</a
               >, an online repository for the tabletop RPG game Pathfinder. This
@@ -245,7 +316,7 @@
               <a
                 href="http://combatmanager.com"
                 title="Combat Manager Repository"
-                aria-label="Combat Maanager Link"
+                aria-label="Combat Manager Link"
                 >Combat Manager</a
               >, which was developed to make running combat in Pathfinder
               easier. <br /><br />
@@ -255,17 +326,19 @@
               feature-rich functionality of Combat Manager, I wrote this script
               to make importing 2nd edition monsters much easier.
             </p>
-            <a
-              class="text-body icon-link d-flex justify-content-end"
-              title="Archive Scrapper Github Repository"
-              href="https://github.com/Naton-Cai/Archive-Scrapper"
-              aria-label="Archive Scrapper Github Repository Link"
-            >
-              <p class="fs-5">
-                <i class="bi bi-box-arrow-up-right"></i>
-                Find out more
-              </p>
-            </a>
+            <div class="d-flex justify-content-end">
+              <a
+                class="text-body icon-link"
+                title="Archive Scrapper Github Repository"
+                href="https://github.com/Naton-Cai/Archive-Scrapper"
+                aria-label="Archive Scrapper Github Repository Link"
+              >
+                <span class="fs-5">
+                  <i class="bi bi-box-arrow-up-right"></i> Find out more
+                </span>
+              </a>
+            </div>
+
             <figure>
               <img
                 src="assets/images/nethys.png"
@@ -274,6 +347,69 @@
               />
               <figcaption>
                 <i>Example Page of a Monster in Nethys.</i>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <hr />
+
+        <div>
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <img
+                src="assets/images/isle_logo.png"
+                alt="Isle of Trust Logo"
+                class="project-icon me-3"
+              />
+              <h2 class="mb-0">Isle of Trust</h2>
+            </div>
+            <a
+              class="btn btn-primary infoCollapse"
+              data-bs-toggle="collapse"
+              href="#collapseIsle"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseIsle"
+            >
+              <span class="collapse-bt-text">Show More</span>
+              <i class="bi bi-chevron-down align-bottom"></i>
+            </a>
+          </div>
+          <div class="collapse mt-3" id="collapseIsle">
+            <p class="fs-5">
+              <a
+                href="https://www.isleoftrust.org"
+                title="Isle of Trust Link"
+                aria-label="Isle of Trust Link"
+                >Isle of Trust
+              </a>
+              is a web game developed for Professor Moshe Rachmuth of Portland
+              State. It is an educational game designed to teach players about
+              the concept of the Prisoner's Dilemna. In the game, players spawn
+              in an island and have to interact with other NPCs in order to
+              survive on the island.
+            </p>
+            <div class="d-flex justify-content-end">
+              <a
+                class="text-body icon-link"
+                title="Isle of Trust Github Repository"
+                href="https://github.com/hollan2/capstone_project/tree/main/Isle%20of%20Trust"
+                aria-label="Isle of Trust Github Repository Link"
+              >
+                <span class="fs-5">
+                  <i class="bi bi-box-arrow-up-right"></i> Find out more
+                </span>
+              </a>
+            </div>
+            <figure>
+              <img
+                src="assets/images/Isle_of_Trust.png"
+                alt="Isle of Trust Gameplay"
+                class="img-fluid mt-3"
+              />
+              <figcaption>
+                <i>Example Gameplay of Isle of Trust.</i>
               </figcaption>
             </figure>
           </div>
