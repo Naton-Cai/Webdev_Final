@@ -55,3 +55,43 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
     });
 
 });
+
+
+//manages our contact form
+const form = document.getElementById('contactForm');
+const submitBtn = form.querySelector('button[type="submit"]');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    //provide our public access key
+    const formData = new FormData(form);
+    formData.append("access_key", "9fd1d1bb-8444-4f38-9bef-e91d61d85cf0");
+
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            alert("Success! Your message has been sent.");
+            form.reset();
+        } else {
+            alert("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
